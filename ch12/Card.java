@@ -35,6 +35,10 @@ public class Card {
             return 1;
         }
         if (this.rank < that.rank) {
+            if (this.rank == 1)    // Exercise 12.2
+            {
+                return 1;
+            }
             return -1;
         }
         if (this.rank > that.rank) {
